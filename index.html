@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>เว็บไซต์ตารางแข่งบอล</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <img src="logo.png" alt="โลโก้เว็บไซต์" class="logo">
+      <marquee class="announcement" aria-label="ประกาศโปรโมชั่น">
+        รับทำเว็บไซต์ ออกแบบเว็บไซต์ เขียนโปรแกรม และแอปพลิเคชั่น ทั้งรูปแบบองค์กร SME และอีคอมเมิร์ซ สร้างแบรนด์ สร้างตัวตน ดูแลครบจบที่เรา
+      </marquee>
+    </header>
+
+    <section class="video-section">
+      <div class="video-wrapper" aria-label="วิดีโอโฆษณา">
+        <iframe src="https://player.vimeo.com/video/1094623570?autoplay=1&muted=0" title="วิดีโอโฆษณา"
+          allow="autoplay; fullscreen" frameborder="0"></iframe>
+      </div>
+    </section>
+
+    <section class="score-table" aria-label="ตารางคะแนน">
+      <iframe id="iframe-score108" width="100%" height="520" frameborder="0" scrolling="no"
+        src="https://www.score108.com/soccer/scoreAPI" title="ตารางคะแนนวันนี้"></iframe>
+    </section>
+
+    <section class="auth-section" aria-label="เข้าสู่ระบบหรือสมัครสมาชิก">
+      <form aria-label="ฟอร์มเข้าสู่ระบบ">
+        <input type="text" placeholder="ชื่อผู้ใช้งาน" aria-label="ชื่อผู้ใช้งาน">
+        <input type="password" placeholder="รหัสผ่าน" aria-label="รหัสผ่าน">
+        <button type="submit" class="login-button">เข้าสู่ระบบ</button>
+        <a href="https://line.me/R/ti/p/@454raxbb" class="register-link">สมัครสมาชิก</a>
+      </form>
+    </section>
+
+    <footer class="bottom-menu" aria-label="เมนูด้านล่าง">
+      <nav>
+        <ul>
+          <li><a href="#" aria-label="เมนูหลัก">เมนู</a></li>
+          <li><a href="#" aria-label="ทุนฟรี">ทุนฟรี</a></li>
+          <li><a href="#" aria-label="ทายผล">ทายผล</a></li>
+          <li><a href="#" aria-label="โปรโมชั่น">โปรโมชั่น</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <section class="footer-banner" aria-label="แบนเนอร์ด้านล่าง">
+      <a href="https://www.facebook.com/share/161BTqjhi4/">
+        <img src="https://i.postimg.cc/y8HrT6Sm/58f690b9-af2a-4626-b249-096bd015d3c8.gif" alt="โปรโมชั่นพิเศษ" class="footer-gif">
+      </a>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

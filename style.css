@@ -1,0 +1,89 @@
+body {
+  background-color: #222222;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+.logo {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 150px;
+}
+.announcement {
+  background: rgba(128, 0, 128, 0.2);
+  padding: 0.5rem;
+  color: white;
+}
+.video-wrapper {
+  border: 3px solid purple;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 56.25%;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.auth-section {
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.auth-section input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.login-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #f39c12;
+  border: none;
+  color: white;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+.register-link {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #00aced;
+}
+.bottom-menu {
+  background: #1a1a1a;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.bottom-menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.bottom-menu a {
+  color: white;
+  text-decoration: none;
+}
+.footer-banner {
+  margin-top: 1rem;
+  text-align: center;
+}
+.footer-gif {
+  max-width: 100%;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

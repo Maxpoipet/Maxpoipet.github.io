@@ -1,2 +1,1 @@
-
-// JS reserved for future interactions
+console.log("เว็บไซต์ตลาดลูกหนังพร้อมใช้งาน");

@@ -1,53 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>คาสิโนออนไลน์ - ตลาดลูกหนัง</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ตลาดลูกหนัง</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="logo-container">
-    <img src="https://i.postimg.cc/BZBQJbcy/8a9574f5-46cb-4e80-8951-232edae47177-removalai-preview.png" alt="โลโก้" class="logo-bounce" />
+<body class="text-white">
+
+  <!-- โลโก้ -->
+  <div class="logo-bounce text-center">
+    <img src="https://i.postimg.cc/BZBQJbcy/8a9574f5-46cb-4e80-8951-232edae47177-removalai-preview.png" alt="Logo" />
   </div>
 
-  <div class="ticker-container">
-    <div class="ticker-bg"></div>
-    <marquee behavior="scroll" direction="left">
-      รับทำเว็บไซต์ ออกแบบเว็บไซต์ เขียนโปรแกรม  และแอปพลิเคชั่น ทั้งรูปแบบองค์กร SME และ อีคอมเมิร์ซ สร้างแบรนด์ สร้างตัวตน ดูแลครบจบที่เรา
-    </marquee>
-  </div>
-
-  <div class="video-section">
-    <div class="video-wrapper">
-      <iframe class="responsive-iframe" src="https://player.vimeo.com/video/1094623570?autoplay=1&muted=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <!-- ข้อความวิ่ง -->
+  <div class="marquee-container">
+    <div class="marquee">
+      รับทำเว็บไซต์ ออกแบบเว็บไซต์ เขียนโปรแกรม และแอปพลิเคชั่น ทั้งรูปแบบองค์กร SME และ อีคอมเมิร์ซ สร้างแบรนด์ สร้างตัวตน ดูแลครบจบที่เรา
     </div>
   </div>
 
-  <div class="login-form">
-    <input type="text" placeholder="ชื่อผู้ใช้งานหรือเบอร์โทรศัพท์" aria-label="ชื่อผู้ใช้">
-    <input type="password" placeholder="รหัสผ่านของคุณ" aria-label="รหัสผ่าน">
-    <button onclick="window.location.href='https://line.me/R/ti/p/@454raxbb'" class="login-btn bounce">เข้าสู่ระบบ / สมัครสมาชิก</button>
+  <!-- วิดีโอ -->
+  <div class="video-wrapper">
+    <iframe src="https://player.vimeo.com/video/1094623570?autoplay=1&muted=0&loop=1&title=0&byline=0&portrait=0"
+      allow="autoplay; fullscreen" frameborder="0" allowfullscreen title="Vimeo Video">
+    </iframe>
   </div>
 
-  <div class="iframe-container">
-    <iframe id="iframe-score108" width="100%" height="520" frameborder="0" scrolling="no" src="https://www.score108.com/soccer/scoreAPI"></iframe>
+  <!-- เข้าสู่ระบบ -->
+  <div class="login-box">
+    <h2>เข้าสู่ระบบ</h2>
+    <form>
+      <input type="text" placeholder="ชื่อผู้ใช้" required />
+      <input type="password" placeholder="รหัสผ่าน" required />
+      <button type="submit" class="btn-bounce">เข้าสู่ระบบ</button>
+    </form>
+    <a href="https://line.me/R/ti/p/@454raxbb" class="register-btn">สมัครสมาชิก</a>
   </div>
 
-  <div class="promo-gif">
-    <a href="https://www.facebook.com/share/161BTqjhi4/" target="_blank">
-      <img src="https://i.postimg.cc/y8HrT6Sm/58f690b9-af2a-4626-b249-096bd015d3c8.gif" alt="โปรโมชั่น" />
+  <!-- ตารางคะแนน -->
+  <div class="table-wrapper px-4 my-10">
+    <iframe id="iframe-score108" width="100%" height="520" frameborder="0" scrolling="no"
+      src="https://www.score108.com/soccer/scoreAPI">
+    </iframe>
+  </div>
+
+  <!-- GIF โปรโมชั่น -->
+  <div class="gif-footer">
+    <a href="https://www.facebook.com/share/161BTqjhi4/">
+      <img src="https://i.postimg.cc/y8HrT6Sm/58f690b9-af2a-4626-b249-096bd015d3c8.gif" alt="Promotion GIF" />
     </a>
   </div>
 
-  <nav class="bottom-nav">
-    <a href="#" class="nav-item"><span class="icon">💰</span><span>ทุนฟรี</span></a>
-    <a href="#" class="nav-item"><span class="icon">🎯</span><span>ทายผล</span></a>
-    <a href="#" class="nav-item"><span class="icon">🎁</span><span>โปรโมชั่น</span></a>
-  </nav>
+  <!-- เมนูด้านล่าง -->
+  <footer class="bottom-menu">
+    <a href="#"><span>🏠</span>เมนู</a>
+    <a href="#"><span>💰</span>ทุนฟรี</a>
+    <a href="#"><span>🎯</span>ทายผล</a>
+    <a href="#"><span>🎁</span>โปรโมชั่น</a>
+  </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>

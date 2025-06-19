@@ -1,115 +1,104 @@
-
 body {
-  margin: 0;
   background-color: #222222;
   font-family: 'Prompt', sans-serif;
-  color: white;
 }
-.logo-container {
-  text-align: center;
-  padding-top: 10px;
-}
-.logo-bounce {
-  width: 160px;
+.logo-bounce img {
+  width: 180px;
+  margin: 20px auto;
   animation: bounce 2s infinite;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
-.ticker-container {
-  position: relative;
-  background-color: rgba(128, 0, 128, 0.2);
-  color: white;
-  padding: 10px 0;
+.marquee-container {
+  background: linear-gradient(to right, #80008040, #80008020);
   overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+  color: #fff;
 }
-.video-section {
-  padding: 20px;
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
 }
 .video-wrapper {
-  border: 3px solid purple;
-  border-radius: 10px;
+  max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin: 20px 0;
+  border: 4px solid #800080;
+  border-radius: 12px;
   overflow: hidden;
-  aspect-ratio: 16/9;
 }
-.login-form {
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
+.login-box {
   background-color: #333;
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.login-form input {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-}
-.login-btn {
-  background-color: #ff4081;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.bounce {
-  animation: bounce 1.5s infinite;
-}
-.iframe-container {
-  margin: 20px auto;
-  width: 100%;
-  max-width: 100%;
-}
-.promo-gif {
+  margin: 0 auto 30px;
   text-align: center;
-  margin: 20px auto;
 }
-.promo-gif img {
-  width: 240px;
+.login-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.login-box input {
   width: 100%;
-  background-color: #111;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+.btn-bounce {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  font-weight: bold;
+  animation: bounce 1.5s infinite;
+  transition: background 0.3s;
+}
+.register-btn {
+  display: block;
+  margin-top: 15px;
+  color: #0af;
+  text-decoration: underline;
+}
+.gif-footer img {
+  width: 300px;
+  margin: 40px auto;
+  display: block;
+}
+.bottom-menu {
   display: flex;
   justify-content: space-around;
-  padding: 10px 0;
-}
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-.icon {
-  font-size: 20px;
-}
-
-
-/* Responsive video container */
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  margin-bottom: 1rem;
-}
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-color: #111;
+  padding: 12px 0;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  border: 0;
+  z-index: 50;
+  border-top: 1px solid #555;
+}
+.bottom-menu a {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.bottom-menu span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 4px;
 }

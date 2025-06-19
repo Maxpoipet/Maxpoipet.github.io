@@ -1,1 +1,2 @@
-console.log("เว็บโหลดเรียบร้อยแล้ว");
+
+// JS reserved for future interactions
